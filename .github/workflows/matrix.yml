@@ -21,9 +21,9 @@ jobs:
                 path: ~/.npm
                 key: ${{ hashFiles('**/package-lock.json')}}
             - name: Install Dependencies
-              uses: npm ci
+              run: npm ci
             - name: Build code
-              uses: npm run build
+              run: npm run build
              
 
             
